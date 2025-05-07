@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm" onsubmit="return validarLogin()">
+
+            <label for="username">Usuário:</label>
+            <br>
+
+            <input type="text" id="username" placeholder="Digite seu nome EX.: José">
+            <br>
+
+            <label for="password">Senha:</label>
+            <div class="password-wrapper">
+                <input type="password" id="password" placeholder="Digite sua senha EX.:*****">
+                <button type="button" onclick="mostrarSenha()">👁</button>
+            </div>
+            <br>
+
+            <input type="submit" value="Entrar">
+        </form>
+        <p id="mensagem"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
