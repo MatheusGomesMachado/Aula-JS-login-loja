@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulador de Compras</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Loja Online</h1>
+    <p>Saldo disponível: R$<span id="saldo">200.00</span></p>
+
+    <h2>Produtos:</h2>
+    <div class="produtos">
+      <button onclick="adicionarProduto('Tênis', 80)">Tênis - R$80,00</button>
+      <button onclick="adicionarProduto('Camiseta', 20)">Camiseta - R$20,00</button>
+      <button onclick="adicionarProduto('Meia', 10)">Meia - R$10,00</button>
+      <button onclick="adicionarProduto('Blusa', 90)">Blusa - R$90,00</button>
+      <button onclick="adicionarProduto('Calça', 100)">Calça - R$100,00</button>
+    </div>
+
+    <h2>Carrinho:</h2>
+    <ul id="lista-carrinho"></ul>
+
+    <p>Total da compra: R$<span id="total">0.00</span></p>
+    <button onclick="esvaziarCarrinho()">Esvaziar Carrinho</button>
+    <p id="mensagem"></p>
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
